@@ -14,7 +14,9 @@ export const toyService = {
 
 
 
-function query(filterBy = {}, sortBy) {
+// function query(filterBy = {}, sortBy) {
+
+function query(filterBy = {}) {
     console.log('this is query from backend');
     if (!filterBy) return Promise.resolve(toys)
 
@@ -39,11 +41,11 @@ function query(filterBy = {}, sortBy) {
     //     });
     // }
 
-    toyToDisplay.sort((toy1, toy2) => {
-        const dir = JSON.parse(sortBy.asc) ? 1 : -1
-        if (sortBy === 'price') return (toy1.price - toy2.price) * dir
-        if (sortBy.by === 'name') return toy1.name.localeCompare(toy2.name) * dir
-    })
+    // toyToDisplay.sort((toy1, toy2) => {
+    //     const dir = JSON.parse(sortBy.asc) ? 1 : -1
+    //     if (sortBy === 'price') return (toy1.price - toy2.price) * dir
+    //     if (sortBy.by === 'name') return toy1.name.localeCompare(toy2.name) * dir
+    // })
 
     return Promise.resolve(toyToDisplay)
 }
