@@ -1,5 +1,6 @@
 [
     {
+        "name": "Chess",
         "_id": "t101",
         "labels": [
             "Doll",
@@ -107,6 +108,7 @@
         "inStock": true
     },
     {
+        "name": "Lady lolo",
         "labels": [
             "Babcccy",
             "Battery Powered",
@@ -116,14 +118,17 @@
         "_id": "Y4Qacd"
     },
     {
+        "name": "Racing car",
         "price": 123,
         "_id": "UDObZR"
     },
     {
+        "name": "Superman",
         "price": 12333,
         "_id": "dG7wpz"
     },
     {
+        "name": "Spiderman",
         "price": 333485,
         "_id": "bffrzs"
     }
