@@ -17,7 +17,8 @@ export const toyService = {
 // function query(filterBy = {}, sortBy) {
 
 function query(filterBy = {}) {
-    console.log('this is query from backend');
+    console.log('this is query from backend')
+    
     if (!filterBy) return Promise.resolve(toys)
 
     let toyToDisplay = toys
